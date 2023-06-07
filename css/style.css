@@ -18,11 +18,11 @@ a {
 
 #header {
   width: 100%;
-  background-image: url(../../img/pic5.jpg);
+  background-image: url(../img/pic5.jpg);
 }
 #header .inner {
   width: 1180px;
-  height: 100px;
+  height: 85px;
   margin: 0px auto;
   position: relative;
   border-bottom: 1px solid #ddd;
@@ -34,7 +34,7 @@ a {
 }
 #header .inner h1 {
   position: absolute;
-  bottom: 20px;
+  top: 15px;
   left: 50%;
   transform: translateX(-50%);
   float: left;
@@ -47,21 +47,21 @@ a {
 #header .inner #gnb1 {
   width: 100%;
   position: absolute;
-  bottom: 40px;
-  left: 220px;
+  top: 30px;
+  left: 200px;
 }
 #header .inner #gnb1 li {
   float: left;
   margin-right: 30px;
 }
 #header .inner #gnb1 li a {
-  font: 14px/1 "Poppins", sans-serif;
+  font: bold 14px/1 "Poppins", sans-serif;
   color: #eee;
 }
 #header .inner #gnb2 {
   width: 100%;
   position: absolute;
-  bottom: 40px;
+  top: 30px;
   right: 200px;
 }
 #header .inner #gnb2 li {
@@ -69,12 +69,12 @@ a {
   margin-right: 30px;
 }
 #header .inner #gnb2 li a {
-  font: 14px/1 "Poppins", sans-serif;
+  font: bold 14px/1 "Poppins", sans-serif;
   color: #eee;
 }
 #header .inner #util {
   position: absolute;
-  bottom: 40px;
+  top: 30px;
   right: 0px;
 }
 #header .inner #util li {
@@ -88,7 +88,7 @@ a {
 #header .inner .btncall {
   display: block;
   position: absolute;
-  bottom: 40px;
+  top: 35px;
   left: 10px;
 }
 #header .inner .btncall i {
@@ -96,14 +96,12 @@ a {
   color: #eee;
 }
 
-@media screen and (max-width: 990px) {
-  #header .inner {
+@media screen and (max-width: 999px) {
+  #header {
     width: 100%;
   }
-  #header .inner::after {
-    content: "";
-    display: block;
-    clear: both;
+  #header .inner {
+    width: 100%;
   }
   #header .inner #gnb1 {
     display: none;
@@ -194,6 +192,83 @@ a {
   float: right;
 }
 
+@media screen and (max-width: 999px) {
+  #footer {
+    padding: 80px 30px 20px;
+  }
+  #footer .inner {
+    width: 100%;
+  }
+  #footer .upper {
+    flex-wrap: wrap;
+  }
+  #footer .upper .logo h1 {
+    margin-bottom: 10px;
+  }
+  #footer .upper .logo p:nth-of-type(1) {
+    font: 10px/1 "Jost", sans-serif;
+    color: #eee;
+    margin-bottom: 40px;
+  }
+  #footer .upper .logo p:nth-of-type(2) {
+    display: none;
+  }
+  #footer .upper .logo p:nth-of-type(3) {
+    display: none;
+  }
+  #footer .upper .menu {
+    gap: 50px;
+  }
+  #footer .upper .sns {
+    display: none;
+  }
+  #footer .lower p:nth-of-type(1) {
+    float: none;
+  }
+  #footer .lower p:nth-of-type(2) {
+    float: none;
+  }
+}
+@media screen and (max-width: 639px) {
+  #footer {
+    padding: 80px 30px 20px;
+  }
+  #footer .inner {
+    width: 100%;
+  }
+  #footer .upper {
+    flex-wrap: wrap;
+  }
+  #footer .upper .logo h1 {
+    margin-bottom: 10px;
+  }
+  #footer .upper .logo p:nth-of-type(1) {
+    font: 10px/1 "Jost", sans-serif;
+    color: #eee;
+    margin-bottom: 40px;
+  }
+  #footer .upper .logo p:nth-of-type(2) {
+    display: none;
+  }
+  #footer .upper .logo p:nth-of-type(3) {
+    display: none;
+  }
+  #footer .upper .menu {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 30px;
+  }
+  #footer .upper .sns {
+    display: none;
+  }
+  #footer .lower p:nth-of-type(1) {
+    float: none;
+  }
+  #footer .lower p:nth-of-type(2) {
+    float: none;
+  }
+}
 #banner {
   width: 100%;
   padding: 150px 0px;
@@ -218,6 +293,7 @@ a {
 #banner .inner .txtBN h1 {
   font: bold 50px/1.3 "Jost", sans-serif;
   color: #222;
+  transition: 0.5s;
 }
 #banner .inner .txtBN h1 span {
   color: coral;
@@ -239,13 +315,72 @@ a {
   object-fit: cover;
 }
 
+@media screen and (max-width: 999px) {
+  #banner {
+    padding: 100px 10vw 50px;
+  }
+  #banner .inner {
+    width: 100%;
+  }
+  #banner .inner p {
+    font: bold 16px/1 "Jost", sans-serif;
+    color: coral;
+  }
+  #banner .inner .txtBN {
+    width: 85%;
+    top: 50px;
+    left: 20%;
+  }
+  #banner .inner .txtBN h1 {
+    font: bold 35px/1.3 "Jost", sans-serif;
+  }
+  #banner .inner .txtBN h2 {
+    font: 18px/1 "Jost", sans-serif;
+  }
+  #banner .inner .pic {
+    position: absolute;
+    right: 0px;
+    bottom: 40px;
+    width: 200px;
+    height: 250px;
+  }
+}
+@media screen and (max-width: 639px) {
+  #banner {
+    padding: 100px 10vw;
+  }
+  #banner .inner {
+    width: 100%;
+  }
+  #banner .inner p {
+    font: bold 16px/1 "Jost", sans-serif;
+    color: coral;
+  }
+  #banner .inner .txtBN {
+    width: 85%;
+    top: 50px;
+    left: 20%;
+  }
+  #banner .inner .txtBN h1 {
+    font: bold 20px/1.7 "Jost", sans-serif;
+  }
+  #banner .inner .txtBN h2 {
+    font: 18px/1 "Jost", sans-serif;
+  }
+  #banner .inner .pic {
+    position: absolute;
+    right: 0px;
+    bottom: 60px;
+    width: 150px;
+    height: 200px;
+  }
+}
 #news {
   width: 100%;
   padding: 180px 0px;
 }
 #news .inner {
   width: 1180px;
-  height: 535px;
   margin: 0px auto;
 }
 #news .inner h1 {
@@ -346,6 +481,158 @@ a {
   margin-bottom: 30px;
 }
 
+@media screen and (max-width: 999px) {
+  #news {
+    padding: 130px 10vw;
+  }
+  #news .inner {
+    width: 100%;
+  }
+  #news .inner h1 {
+    margin-bottom: 50px;
+  }
+  #news .inner .wrap article:nth-of-type(1),
+  #news .inner .wrap article:nth-of-type(2),
+  #news .inner .wrap article:nth-of-type(3),
+  #news .inner .wrap article:nth-of-type(4) {
+    width: 100%;
+    float: left;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #ccc;
+  }
+  #news .inner .wrap article:nth-of-type(1):last-child,
+  #news .inner .wrap article:nth-of-type(2):last-child,
+  #news .inner .wrap article:nth-of-type(3):last-child,
+  #news .inner .wrap article:nth-of-type(4):last-child {
+    border-bottom: 0px;
+  }
+  #news .inner .wrap article:nth-of-type(1) .pic,
+  #news .inner .wrap article:nth-of-type(2) .pic,
+  #news .inner .wrap article:nth-of-type(3) .pic,
+  #news .inner .wrap article:nth-of-type(4) .pic {
+    float: right;
+    width: 150px;
+    height: 100px;
+    margin-bottom: 15px;
+  }
+  #news .inner .wrap article:nth-of-type(1) .pic img,
+  #news .inner .wrap article:nth-of-type(2) .pic img,
+  #news .inner .wrap article:nth-of-type(3) .pic img,
+  #news .inner .wrap article:nth-of-type(4) .pic img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  #news .inner .wrap article:nth-of-type(1) .txt,
+  #news .inner .wrap article:nth-of-type(2) .txt,
+  #news .inner .wrap article:nth-of-type(3) .txt,
+  #news .inner .wrap article:nth-of-type(4) .txt {
+    float: left;
+    width: 380px;
+  }
+  #news .inner .wrap article:nth-of-type(1) .txt h2,
+  #news .inner .wrap article:nth-of-type(2) .txt h2,
+  #news .inner .wrap article:nth-of-type(3) .txt h2,
+  #news .inner .wrap article:nth-of-type(4) .txt h2 {
+    font: bold 12px/1 "Jost", sans-serif;
+    color: coral;
+    margin-bottom: 15px;
+    letter-spacing: 1px;
+  }
+  #news .inner .wrap article:nth-of-type(1) .txt p,
+  #news .inner .wrap article:nth-of-type(2) .txt p,
+  #news .inner .wrap article:nth-of-type(3) .txt p,
+  #news .inner .wrap article:nth-of-type(4) .txt p {
+    font: bold 18px/1.1 "Poppins", sans-serif;
+    color: #222;
+    margin-bottom: 15px;
+  }
+  #news .inner .wrap article:nth-of-type(1) .txt span,
+  #news .inner .wrap article:nth-of-type(2) .txt span,
+  #news .inner .wrap article:nth-of-type(3) .txt span,
+  #news .inner .wrap article:nth-of-type(4) .txt span {
+    display: block;
+    font: 12px/1 "Poppins", sans-serif;
+    color: #666;
+    margin-bottom: 30px;
+  }
+}
+@media screen and (max-width: 639px) {
+  #news {
+    padding: 100px 5vw;
+  }
+  #news .inner {
+    width: 100%;
+  }
+  #news .inner h1 {
+    margin-bottom: 30px;
+  }
+  #news .inner .wrap article:nth-of-type(1),
+  #news .inner .wrap article:nth-of-type(2),
+  #news .inner .wrap article:nth-of-type(3),
+  #news .inner .wrap article:nth-of-type(4) {
+    width: 100%;
+    float: left;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #ccc;
+  }
+  #news .inner .wrap article:nth-of-type(1):last-child,
+  #news .inner .wrap article:nth-of-type(2):last-child,
+  #news .inner .wrap article:nth-of-type(3):last-child,
+  #news .inner .wrap article:nth-of-type(4):last-child {
+    border-bottom: 0px;
+  }
+  #news .inner .wrap article:nth-of-type(1) .pic,
+  #news .inner .wrap article:nth-of-type(2) .pic,
+  #news .inner .wrap article:nth-of-type(3) .pic,
+  #news .inner .wrap article:nth-of-type(4) .pic {
+    float: left;
+    width: 300px;
+    height: 250px;
+    margin-bottom: 15px;
+  }
+  #news .inner .wrap article:nth-of-type(1) .pic img,
+  #news .inner .wrap article:nth-of-type(2) .pic img,
+  #news .inner .wrap article:nth-of-type(3) .pic img,
+  #news .inner .wrap article:nth-of-type(4) .pic img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  #news .inner .wrap article:nth-of-type(1) .txt,
+  #news .inner .wrap article:nth-of-type(2) .txt,
+  #news .inner .wrap article:nth-of-type(3) .txt,
+  #news .inner .wrap article:nth-of-type(4) .txt {
+    float: left;
+    width: 100%;
+  }
+  #news .inner .wrap article:nth-of-type(1) .txt h2,
+  #news .inner .wrap article:nth-of-type(2) .txt h2,
+  #news .inner .wrap article:nth-of-type(3) .txt h2,
+  #news .inner .wrap article:nth-of-type(4) .txt h2 {
+    font: bold 12px/1 "Jost", sans-serif;
+    color: coral;
+    margin-bottom: 15px;
+    letter-spacing: 1px;
+  }
+  #news .inner .wrap article:nth-of-type(1) .txt p,
+  #news .inner .wrap article:nth-of-type(2) .txt p,
+  #news .inner .wrap article:nth-of-type(3) .txt p,
+  #news .inner .wrap article:nth-of-type(4) .txt p {
+    font: bold 18px/1.1 "Poppins", sans-serif;
+    color: #222;
+    margin-bottom: 15px;
+  }
+  #news .inner .wrap article:nth-of-type(1) .txt span,
+  #news .inner .wrap article:nth-of-type(2) .txt span,
+  #news .inner .wrap article:nth-of-type(3) .txt span,
+  #news .inner .wrap article:nth-of-type(4) .txt span {
+    display: block;
+    font: 12px/1 "Poppins", sans-serif;
+    color: #666;
+    margin-bottom: 30px;
+  }
+}
 #community {
   width: 100%;
   padding: 100px 0px;
@@ -450,6 +737,91 @@ a {
   color: #777;
 }
 
+@media screen and (max-width: 999px) {
+  #community {
+    padding: 100px 30px;
+  }
+  #community .inner {
+    width: 100%;
+    margin: 0px auto;
+  }
+  #community .inner h1 {
+    font: bold 30px/1 "Jost", sans-serif;
+    color: #333;
+    margin-bottom: 30px;
+  }
+  #community .inner .wrap {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  #community .inner .wrap article:nth-of-type(1) {
+    float: none;
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  #community .inner .wrap article:nth-of-type(1) .pic {
+    width: 100%;
+  }
+  #community .inner .wrap article:nth-of-type(1) h2 {
+    font: bold 12px/1 "Jost", sans-serif;
+    color: coral;
+    margin-bottom: 15px;
+    letter-spacing: 1px;
+  }
+  #community .inner .wrap article:nth-of-type(1) h3 {
+    font: bold 18px/1.1 "Poppins", sans-serif;
+    color: #222;
+    margin-bottom: 15px;
+  }
+  #community .inner .wrap article:nth-of-type(1) p {
+    font: 12px/1 "Poppins", sans-serif;
+    color: #777;
+  }
+  #community .inner .wrap article:nth-of-type(2) {
+    float: none;
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  #community .inner .wrap article:nth-of-type(2) .txtBox {
+    width: 100%;
+  }
+  #community .inner .wrap article:nth-of-type(2) .txtBox h2 {
+    font: bold 12px/1 "Jost", sans-serif;
+    color: coral;
+    margin-bottom: 15px;
+  }
+  #community .inner .wrap article:nth-of-type(2) .txtBox h3 {
+    font: bold 18px/1.3 "Poppins", sans-serif;
+    color: #222;
+    margin-bottom: 15px;
+  }
+  #community .inner .wrap article:nth-of-type(2) .txtBox p {
+    font: 12px/1 "Poppins", sans-serif;
+    color: #777;
+  }
+  #community .inner .wrap article:nth-of-type(3) {
+    float: none;
+    width: 100%;
+  }
+  #community .inner .wrap article:nth-of-type(3) .pic {
+    width: 100%;
+  }
+  #community .inner .wrap article:nth-of-type(3) h2 {
+    font: bold 12px/1 "Jost", sans-serif;
+    color: coral;
+    margin-bottom: 15px;
+    letter-spacing: 1px;
+  }
+  #community .inner .wrap article:nth-of-type(3) h3 {
+    font: bold 18px/1.1 "Poppins", sans-serif;
+    color: #222;
+    margin-bottom: 15px;
+  }
+  #community .inner .wrap article:nth-of-type(3) p {
+    font: 12px/1 "Poppins", sans-serif;
+    color: #777;
+  }
+}
 #science {
   width: 100%;
   padding: 180px 0px;
@@ -469,19 +841,19 @@ a {
   justify-content: space-between;
   align-items: center;
 }
-#science .inner .wrap h2 {
+#science .inner .wrap article .pic img {
+  width: 100%;
+  height: 300px;
+  margin-bottom: 20px;
+}
+#science .inner .wrap article h2 {
   font: bold 16px/1 "Poppins", sans-serif;
   color: #333;
   margin-bottom: 20px;
 }
-#science .inner .wrap p {
+#science .inner .wrap article p {
   font: 12px/1 "Poppins", sans-serif;
   color: #666;
-}
-#science .inner .wrap .pic img {
-  width: 100%;
-  height: 300px;
-  margin-bottom: 20px;
 }
 #science .inner .wrap article:nth-of-type(1) {
   width: 280px;
@@ -499,6 +871,56 @@ a {
   height: 430px;
 }
 
+@media screen and (max-width: 999px) {
+  #science {
+    width: 100%;
+    padding: 150px 30px 100px;
+  }
+  #science .inner {
+    width: 100%;
+  }
+  #science .inner h1 {
+    font: bold 30px/1 "Jost", sans-serif;
+    color: #333;
+    margin-bottom: 30px;
+  }
+  #science .inner .wrap {
+    flex-direction: column;
+  }
+  #science .inner .wrap article {
+    width: 100%;
+    height: 340px;
+  }
+  #science .inner .wrap article .pic {
+    width: 100%;
+  }
+  #science .inner .wrap article .pic img {
+    width: 100%;
+    height: 200px;
+    margin-bottom: 20px;
+  }
+  #science .inner .wrap article h2 {
+    font: bold 16px/1 "Poppins", sans-serif;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  #science .inner .wrap article p {
+    font: 12px/1 "Poppins", sans-serif;
+    color: #666;
+  }
+  #science .inner .wrap article:nth-of-type(1) {
+    width: 100%;
+    height: 340px;
+  }
+  #science .inner .wrap article:nth-of-type(2) {
+    width: 100%;
+    height: 340px;
+  }
+  #science .inner .wrap article:nth-of-type(3) {
+    width: 100%;
+    height: 340px;
+  }
+}
 #goods {
   width: 100%;
   padding: 170px 0px;
@@ -553,11 +975,78 @@ a {
   object-fit: cover;
 }
 
+@media screen and (max-width: 999px) {
+  #goods {
+    width: 100%;
+    padding: 150px 30px;
+  }
+  #goods .inner {
+    width: 100%;
+  }
+  #goods .inner h1 {
+    font: bold 30px/1 "Jost", sans-serif;
+    color: #333;
+    margin-bottom: 30px;
+  }
+  #goods .inner ul li .date p:nth-of-type(1) {
+    font: bold 18px/1 "Poppins", sans-serif;
+    color: coral;
+    margin-bottom: 15px;
+  }
+  #goods .inner ul li .date p:nth-of-type(2) {
+    font: bold 15px/1 "Poppins", sans-serif;
+    color: gray;
+  }
+  #goods .inner ul li .txt a {
+    font: bold 17px/1 "Poppins", sans-serif;
+    color: #333;
+    text-align: left;
+  }
+  #goods .inner ul li .txt p {
+    margin-top: 13px;
+    font: 15px/1 "Poppins", sans-serif;
+    color: #999;
+  }
+  #goods .inner ul li .pic {
+    width: 150px;
+    height: 100px;
+    margin-bottom: 20px;
+  }
+  #goods .inner ul li .pic img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+@media screen and (max-width: 639px) {
+  #goods .inner {
+    height: 100%;
+  }
+  #goods .inner ul li {
+    flex-wrap: wrap;
+  }
+  #goods .inner ul li .date {
+    margin-bottom: 10px;
+  }
+  #goods .inner ul li .date p:nth-of-type(1) {
+    display: inline;
+  }
+  #goods .inner ul li .date p:nth-of-type(2) {
+    display: inline;
+  }
+  #goods .inner ul li .txt {
+    margin-bottom: 30px;
+  }
+  #goods .inner ul li .pic {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
 #visual {
   width: 100%;
   height: 100vh;
   padding: 165px 0px 190px;
-  background-image: url(../../img/pic5.jpg);
+  background-image: url(../img/pic5.jpg);
   background-repeat: repeat;
   background-position: 0px 0px;
   background-size: cover;
@@ -572,11 +1061,11 @@ a {
   margin-bottom: 15px;
 }
 #visual .inner h1 {
-  width: 80%;
+  width: 70%;
   font: bold 50px/1.3 "Jost", sans-serif;
   color: #fff;
   margin-bottom: 15px;
-  letter-spacing: 2px;
+  transition: 0.5s;
 }
 #visual .inner span {
   font: 13px/1 "Jost", sans-serif;
@@ -585,8 +1074,33 @@ a {
 #visual .inner a {
   display: block;
   margin-top: 50px;
-  font: 12px/1 "Jost", sans-serif;
+  font: 13px/1 "Jost", sans-serif;
   color: #eee;
+}
+
+@media screen and (max-width: 999px) {
+  #visual {
+    padding: 130px 20px;
+  }
+  #visual .inner {
+    width: 100%;
+  }
+  #visual .inner h1 {
+    width: 70%;
+    font: bold 35px/1.3 "Jost", sans-serif;
+  }
+}
+@media screen and (max-width: 639px) {
+  #visual {
+    padding: 100px 20px;
+  }
+  #visual .inner {
+    width: 100%;
+  }
+  #visual .inner h1 {
+    width: 70%;
+    font: bold 20px/1.3 "Jost", sans-serif;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
